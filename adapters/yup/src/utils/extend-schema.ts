@@ -1,5 +1,5 @@
 import type { ObjectSchema, AnySchema } from "yup";
-import type { ParsedURL } from "../types";
+import type { ParsedURL } from "../../../../core/src";
 
 /**
  * This function lets you extend an object schema with additions defined in an object. The extension itself is done by Yup's `ObjectSchema.shape` method.

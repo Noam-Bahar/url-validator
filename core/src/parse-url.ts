@@ -1,5 +1,3 @@
-import type { ParsedURL } from "../types";
-
 /**
  * Parses a given URL string and returns a object with properties taken from a URL objects with enhanced properties.
  * This function uses the native URL API. However unlike the native `URL` object, this function provides additional utilities
@@ -24,7 +22,7 @@ import type { ParsedURL } from "../types";
  * @throws {TypeError} Invalid URL
  * @see [URL - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/URL)
  */
-function parseURL(url: string): ParsedURL {
+function parseURL(url: string) {
   const urlObject = new URL(url);
   const { pathname, searchParams } = urlObject;
 

@@ -1,6 +1,6 @@
-import { extendSchema } from "../core";
+import { extendSchema } from ".";
 import type { AnySchema, ObjectSchema } from "yup";
-import type { ParsedURL } from "../types";
+import type { ParsedURL } from "../../../../core/src";
 
 /**
  * Creates a higher-order function that extends a given base schema.

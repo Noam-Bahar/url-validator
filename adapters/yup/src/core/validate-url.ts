@@ -1,7 +1,7 @@
 import { urlStringSchema } from "../schemas";
-import { parseURL } from "./parse-url";
+import { parseURL } from "../../../../core/src";
 import type { ObjectSchema, InferType } from "yup";
-import type { ParsedURL } from "../types";
+import type { ParsedURL } from "../../../../core/src";
 
 /**
  * Validates a URL string against a Parsed URL object schema.
