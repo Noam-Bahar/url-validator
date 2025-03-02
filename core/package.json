@@ -1,5 +1,5 @@
 {
-  "name": "@url-validator/core",
+  "name": "core",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,13 +9,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.5.2",
-  "pnpm": {
-    "overrides": {
-      "core": "link:../../../.local/share/pnpm/global/5/node_modules/@url-validator/core"
-    }
-  },
-  "dependencies": {
-    "core": "link:../../../.local/share/pnpm/global/5/node_modules/@url-validator/core"
-  }
+  "packageManager": "pnpm@10.5.2"
 }
