@@ -1,6 +1,6 @@
 import { extendSchema } from ".";
 import type { AnySchema, ObjectSchema } from "yup";
-import type { ParsedURL } from "../../../../core/src";
+import type { DestructuredURL } from "../../../../core/src";
 
 /**
  * Creates a higher-order function that extends a given base schema.
@@ -18,10 +18,10 @@ import type { ParsedURL } from "../../../../core/src";
  * });
  * ```
  */
-function createSchemaExtender<T extends ObjectSchema<ParsedURL>>(
+function createSchemaExtender<T extends ObjectSchema<DestructuredURL>>(
   baseSchema: T
 ) {
-  return function <U extends Partial<Record<keyof ParsedURL, AnySchema>>>(
+  return function <U extends Partial<Record<keyof DestructuredURL, AnySchema>>>(
     extensions: U
   ) {
     return extendSchema(baseSchema, extensions);

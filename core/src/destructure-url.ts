@@ -22,7 +22,7 @@
  * @throws {TypeError} Invalid URL
  * @see [URL - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/URL)
  */
-function parseURL(url: string) {
+function destructureURL(url: string) {
   const urlObject = new URL(url);
   const { pathname, searchParams } = urlObject;
 
@@ -46,4 +46,4 @@ function parseURL(url: string) {
   };
 }
 
-export { parseURL };
+export { destructureURL };
