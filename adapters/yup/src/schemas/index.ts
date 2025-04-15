@@ -1,2 +1,2 @@
-export * from './parsed-url-schema';
+export * from './destructured-url-schema';
 export * from './url-string-schema';
