@@ -1,2 +1,2 @@
-export * from "./destructure-url";
-export * from "./destructured-url";
+export * from "./parse-url";
+export * from "./parsed-url";

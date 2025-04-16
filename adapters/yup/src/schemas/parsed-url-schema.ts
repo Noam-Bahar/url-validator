@@ -1,6 +1,6 @@
 import { object, string, array } from "yup";
 
-const destructuredURLSchema = object({
+const parsedURLSchema = object({
   hash: string().defined(),
   host: string().defined(),
   hostname: string().defined(),
@@ -16,4 +16,4 @@ const destructuredURLSchema = object({
   username: string().defined(),
 });
 
-export { destructuredURLSchema };
+export { parsedURLSchema };

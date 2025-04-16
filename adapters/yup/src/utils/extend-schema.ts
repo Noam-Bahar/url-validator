@@ -1,5 +1,5 @@
 import type { ObjectSchema, AnySchema } from "yup";
-import type { DestructuredURL } from "../../../../core/src";
+import type { ParsedURL } from "../../../../core/src";
 
 /**
  * This function lets you extend an object schema with additions defined in an object. The extension itself is done by Yup's `ObjectSchema.shape` method.
@@ -10,8 +10,8 @@ import type { DestructuredURL } from "../../../../core/src";
  * @see [`ObjectSchema.shape`](https://github.com/jquense/yup?tab=readme-ov-file#objectshapefields-object-nosortedges-arraystring-string-schema)
  */
 function extendSchema<
-  T extends ObjectSchema<DestructuredURL>,
-  U extends Partial<Record<keyof DestructuredURL, AnySchema>>
+  T extends ObjectSchema<ParsedURL>,
+  U extends Partial<Record<keyof ParsedURL, AnySchema>>
 >(baseSchema: T, extension: U) {
   return baseSchema.shape(extension);
 }

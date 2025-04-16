@@ -1,4 +1,4 @@
-import { destructuredURLSchema } from "../schemas";
+import { parsedURLSchema } from "../schemas";
 import { createSchemaExtender } from "./create-schema-extender";
 
 /**
@@ -14,6 +14,6 @@ import { createSchemaExtender } from "./create-schema-extender";
  * });
  * ```
  */
-const extendBaseSchema = createSchemaExtender(destructuredURLSchema);
+const extendBaseSchema = createSchemaExtender(parsedURLSchema);
 
 export { extendBaseSchema };
